@@ -5,10 +5,10 @@ import android.view.View
 import android.widget.CheckBox
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.equipo3.R
 
 class EstadosViewHolder (view: View) : RecyclerView.ViewHolder(view){
-    private val tvIncidencia: TextView = view.findViewById()
-    private val cbIncidencia: CheckBox = view.findViewById()
+    private val tvIncidencia: TextView = view.findViewById(R.id.tvIncidencia)
 
 
     fun render(incidencia: Estados){
@@ -20,7 +20,6 @@ class EstadosViewHolder (view: View) : RecyclerView.ViewHolder(view){
         }
 
         tvIncidencia.text = incidencia.name
-        cbIncidencia.isChecked = incidencia.isSelected
 
 
     }

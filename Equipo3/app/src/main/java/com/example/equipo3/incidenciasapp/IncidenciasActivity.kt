@@ -37,10 +37,26 @@ class IncidenciasActivity : AppCompatActivity() {
     private lateinit var estadosAdapter: EstadosAdapter
 
     private lateinit var rvIncidencias: RecyclerView
-    private lateinit var incidenciasAdapter:
+    private lateinit var incidenciasAdapter: IncidenciasAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_incidencias)
+
+        initComponent()
+        initUI()
+        initListener()
+    }
+
+    private fun initComponent() {
+        rvIncidencias = findViewById(R.id.rv)
+    }
+
+    private fun initUI() {
+        TODO("Not yet implemented")
+    }
+
+    private fun initListener() {
+        TODO("Not yet implemented")
     }
 }
