@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
 import com.example.equipo3.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 /*
 abierto,
@@ -39,6 +40,7 @@ class IncidenciasActivity : AppCompatActivity() {
     private lateinit var rvIncidencias: RecyclerView
     private lateinit var incidenciasAdapter: IncidenciasAdapter
 
+    private lateinit var masIncidencias: FloatingActionButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_incidencias)
@@ -49,7 +51,9 @@ class IncidenciasActivity : AppCompatActivity() {
     }
 
     private fun initComponent() {
-        rvIncidencias = findViewById(R.id.rv)
+        rvIncidencias = findViewById(R.id.rvIncidencias)
+        rvEstados = findViewById(R.id.rvEstados)
+        masIncidencias = findViewById(R.id.fabMasIncidencias)
     }
 
     private fun initUI() {
@@ -57,6 +61,10 @@ class IncidenciasActivity : AppCompatActivity() {
     }
 
     private fun initListener() {
-        TODO("Not yet implemented")
+        masIncidencias.setOnClickListener { showDialog() }
+    }
+
+    private fun showDialog(){
+        
     }
 }
