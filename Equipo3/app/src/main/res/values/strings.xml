@@ -4,4 +4,5 @@
     <string name="loginPass">Password</string>
     <string name="loginBt">Login</string>
     <string name="fabBt">Add issue</string>
+    <string name="searchBar">Search...</string>
 </resources>

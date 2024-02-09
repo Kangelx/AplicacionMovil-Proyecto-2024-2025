@@ -13,8 +13,23 @@
     <color name="colorFondoApp">#41546D</color> <!-- Puedes ajustar este color según tus preferencias -->
 
     <color name="colorVerde">#44872B</color> <!-- Puedes ajustar este color según tus preferencias -->
-    <color name="colorNaranja">#ffa500</color>
+
+    <color name="colorVerdeClaro">#468030</color>
+
+    <color name="colorRojo">#CA1219</color>
     <!-- ... Otros colores aquí ... -->
 
-    <color name="todo_accent">#6DCC67</color>
+    <color name="colorNaranja">#E1903A</color>
+
+    <color name="colorIncidencias">#B8AF96</color>
+    <!--TodoApp-->
+    <color name="todo_background_card">#FF081A4A</color>
+    <color name="todo_background_disabled">#787878</color>
+    <color name="todo_background_todo_app">#FF2D4993</color>
+    <color name="todo_subtitle_text">#959595</color>
+    <color name="todo_accent">#E91E63</color>
+
+    <color name="todo_business_category">#FF9800</color>
+    <color name="todo_personal_category">#00BCD4</color>
+    <color name="todo_other_category">#4CAF50</color>
 </resources>

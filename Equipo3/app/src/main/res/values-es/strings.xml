@@ -5,4 +5,5 @@
     <string name="loginPass">Contraseña</string>
     <string name="loginBt">Acceder</string>
     <string name="fabBt">Añadir incidencia</string>
+    <string name="searchBar">Buscar...</string>
 </resources>

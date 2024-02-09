@@ -2,18 +2,12 @@ package com.example.equipo3.incidenciasapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.equipo3.R
+import com.example.equipo3.databinding.ActivityIncidenciasBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-/*
-abierto,
-asignado,
-en proceso,
-enviado a INFORTEC,
-resuelto,
-cerrado.
- */
 class IncidenciasActivity : AppCompatActivity() {
 
     private val estados = listOf(
@@ -34,6 +28,8 @@ class IncidenciasActivity : AppCompatActivity() {
         Estados("Cerrado", EstadosIncidencias.Cerrado)
     )
 
+    private lateinit var binding: ActivityIncidenciasBinding
+
     private lateinit var rvEstados: RecyclerView
     private lateinit var estadosAdapter: EstadosAdapter
 
@@ -43,11 +39,21 @@ class IncidenciasActivity : AppCompatActivity() {
     private lateinit var masIncidencias: FloatingActionButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_incidencias)
+
+        binding = ActivityIncidenciasBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         initComponent()
         initUI()
         initListener()
+    }
+
+    private fun initListener() {
+        masIncidencias.setOnClickListener { showDialog() }
+    }
+
+    private fun showDialog(){
+
     }
 
     private fun initComponent() {
@@ -57,14 +63,30 @@ class IncidenciasActivity : AppCompatActivity() {
     }
 
     private fun initUI() {
-        TODO("Not yet implemented")
+        estadosAdapter = EstadosAdapter(estados) { position -> updateEstados(position)}
+        rvEstados.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        rvIncidencias.adapter = estadosAdapter
+
+        incidenciasAdapter = IncidenciasAdapter(incidencias) {position ->onItemSelected(position)}
+        rvIncidencias.layoutManager = LinearLayoutManager(this)
+        rvIncidencias.adapter = incidenciasAdapter
     }
 
-    private fun initListener() {
-        masIncidencias.setOnClickListener { showDialog() }
+    private fun onItemSelected(position: Int){
+        incidencias[position].isSelected = !incidencias[position].isSelected
+        updateIncidencias()
     }
 
-    private fun showDialog(){
-        
+    private fun updateEstados(position: Int){
+        estados[position].isSelected = !estados[position].isSelected
+        estadosAdapter.notifyItemChanged(position)
+        updateIncidencias()
+    }
+
+    private fun updateIncidencias(){
+        val selectedEstados: List<EstadosIncidencias> = estados.filter { it.isSelected }
+        val nuevaIncidencia = incidencias.filter {selectedEstados.contains(it.estado)}
+        incidenciasAdapter.incidencias = nuevaIncidencia
+        incidenciasAdapter.notifyDataSetChanged()
     }
 }

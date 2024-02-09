@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.equipo3.R
 
-class EstadosAdapter (var estados: List<Estados>, private val incidenciaElegida: (Int) -> Unit):
+class EstadosAdapter (var estados: List<EstadosIncidencias>, private val incidenciaElegida: (Int) -> Unit):
 RecyclerView.Adapter<EstadosViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EstadosViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_estado, parent, false)

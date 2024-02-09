@@ -11,7 +11,7 @@ class EstadosViewHolder (view: View) : RecyclerView.ViewHolder(view){
     private val tvIncidencia: TextView = view.findViewById(R.id.tvIncidencia)
 
 
-    fun render(incidencia: Estados){
+    fun render(incidencia: EstadosIncidencias){
         if (incidencia.isSelected){
             tvIncidencia.paintFlags = tvIncidencia.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
         }
@@ -19,7 +19,7 @@ class EstadosViewHolder (view: View) : RecyclerView.ViewHolder(view){
             tvIncidencia.paintFlags = tvIncidencia.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
         }
 
-        tvIncidencia.text = incidencia.name
+        tvIncidencia.text = incidencia.toString()
 
 
     }
