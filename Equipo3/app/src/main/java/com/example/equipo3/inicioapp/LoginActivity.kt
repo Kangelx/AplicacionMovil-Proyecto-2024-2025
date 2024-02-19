@@ -7,11 +7,19 @@ import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.lifecycleScope
 import com.example.equipo3.R
+import com.example.equipo3.databinding.ActivityLoginBinding
 import com.example.equipo3.incidenciasapp.IncidenciasActivity
+import com.example.equipo3.viewmodel.UsuarioViewModel
+import kotlinx.coroutines.launch
+import java.security.MessageDigest
 
 class LoginActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityLoginBinding
+    private val viewModel: UsuarioViewModel  by activityViewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -57,5 +65,49 @@ class LoginActivity : AppCompatActivity() {
     private fun verIncidencias(){
         val incidencias = Intent(this, IncidenciasActivity::class.java)
         startActivity(incidencias)
+    }
+
+    fun login(){
+        if(validarDatos()){
+            val usuario = binding.etNombre.text.toString()
+            val pass = hashMD5(binding.etPassword.text.toString())
+
+            lifecycleScope.launch{
+                try{
+                    val usuario =
+                }
+            }
+        }
+    }
+    private fun validarDatos() : Boolean{
+        if(binding.etNombre.text.toString().isEmpty()){
+            Toast.makeText(this, "Indica el correo del profesor.", Toast.LENGTH_LONG).show()
+            return false
+        }
+
+        if (!Patterns.EMAIL_ADDRESS.matcher(binding.etNombre.text.toString()).matches()){
+            Toast.makeText(this, "El correo indicado no es válido", Toast.LENGTH_LONG).show()
+            return false
+        }
+
+        if(binding.etNombre.text.toString().isEmpty()){
+            Toast.makeText(this, "Indica el correo del profesor.", Toast.LENGTH_LONG).show()
+            return false
+        }
+
+        if(binding.etPassword.text.toString().isEmpty()){
+            Toast.makeText(this, "Indica la contraseña.", Toast.LENGTH_LONG).show()
+            return false
+        }
+
+        return true
+    }
+
+    private fun hashMD5(pass: String) : String {
+        val md = MessageDigest.getInstance("MD5")
+        val digesto = md.digest(pass.toByteArray())
+        return digesto.joinToString(""){
+            String.format("%02x",it)
+        }
     }
 }
