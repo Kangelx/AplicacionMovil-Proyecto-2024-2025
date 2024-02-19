@@ -23,13 +23,17 @@
 
     <color name="colorIncidencias">#B8AF96</color>
     <!--TodoApp-->
-    <color name="todo_background_card">#FF081A4A</color>
-    <color name="todo_background_disabled">#787878</color>
-    <color name="todo_background_todo_app">#FF2D4993</color>
-    <color name="todo_subtitle_text">#959595</color>
-    <color name="todo_accent">#E91E63</color>
+    <color name="background_card">#FF081A4A</color>
+    <color name="background_disabled">#787878</color>
+    <color name="background_app">#FF2D4993</color>
+    <color name="subtitle_text">#959595</color>
+    <color name="accent">#E91E63</color>
 
-    <color name="todo_business_category">#FF9800</color>
-    <color name="todo_personal_category">#00BCD4</color>
-    <color name="todo_other_category">#4CAF50</color>
+    <color name="estado_abierto">#FF9800</color>
+    <color name="estado_asignado">#00BCD4</color>
+    <color name="estado_enProceso">#F961FF</color>
+    <color name="estado_EnviadoInfortec">#9770FF</color>
+    <color name="estado_Resuelto">#4CAF50</color>
+    <color name="estado_Cerrado">#AEAEAE</color>
+
 </resources>
