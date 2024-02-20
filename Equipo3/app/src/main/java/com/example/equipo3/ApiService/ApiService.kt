@@ -13,7 +13,7 @@ import retrofit2.http.POST
 import retrofit2.http.PUT
 import retrofit2.http.Path
 
-private const val URL_BASE = ""
+private const val URL_BASE = "http://10.0.13.119:4001/"
 private val retrofit = Retrofit.Builder()
     .baseUrl(URL_BASE)
     .addConverterFactory(GsonConverterFactory.create())
@@ -24,8 +24,8 @@ interface ApiService {
 
     @GET("/perfil")
     suspend fun getUsuario(
-        @Header(value = "educantabria")educantabria: String,
-        @Header(value = "password")password: String
+        @Header(value = "educantabria")educantabria: String//,
+        //@Header(value = "password")password: String
     ): Usuario?
 
     @POST("/incidencia")

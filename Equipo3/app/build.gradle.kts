@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    //id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.equipo3"
-        minSdk = 24
+        minSdk = 28
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -34,8 +35,9 @@ android {
         jvmTarget = "1.8"
     }
 
-    viewBinding{
-        enable=true;
+    buildFeatures{
+        viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -52,4 +54,13 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    implementation ("androidx.activity:activity-ktx:1.6.1")
+    implementation ("androidx.fragment:fragment-ktx:1.2.5")
+    implementation ("androidx.activity:activity-ktx:1.1.0")
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.5.3")
+    implementation ("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.4")
+
 }

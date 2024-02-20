@@ -7,5 +7,5 @@ import com.example.equipo3.model.Repository
 class UsuarioViewModel : ViewModel() {
     private val repositorio = Repository()
 
-    suspend fun cargarUsuario(user: String, password: String) = repositorio.getUsuario(user, password)
+    suspend fun cargarUsuario(user: String, password: String) = repositorio.getUsuario(user)
 }
