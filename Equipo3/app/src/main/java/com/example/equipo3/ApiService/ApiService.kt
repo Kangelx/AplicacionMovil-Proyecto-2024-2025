@@ -2,6 +2,7 @@ package com.example.equipo3.ApiService;
 
 import com.example.equipo3.model.Incidencia
 import com.example.equipo3.model.Usuario
+import com.example.equipo3.response.LoginResponse
 
 import retrofit2.Call;
 import retrofit2.Retrofit
@@ -12,13 +13,26 @@ import retrofit2.http.Header
 import retrofit2.http.POST
 import retrofit2.http.PUT
 import retrofit2.http.Path
+import retrofit2.http.Query
 
-private const val URL_BASE = "http://10.0.13.119:4001/"
-private val retrofit = Retrofit.Builder()
-    .baseUrl(URL_BASE)
-    .addConverterFactory(GsonConverterFactory.create())
-    .build()
+
 interface ApiService {
+    //@POST(value = "login")
+    @GET("/perfil/")
+    fun postLogin(@Query(value = "educantabria") email: String, @Query (value = "password") password: String):
+            Call<LoginResponse>
+
+    companion object Factory{
+        private const val URL_BASE = "http://10.0.13.119:4001/"
+         fun create(): ApiService {
+             val retrofit = Retrofit.Builder()
+                 .baseUrl(URL_BASE)
+                 .addConverterFactory(GsonConverterFactory.create())
+                 .build()
+             return retrofit.create(ApiService::class.java)
+         }
+    }
+    /*
     @GET("/incidencia")
     suspend fun getIncidencias(): List<Incidencia>
 
@@ -38,8 +52,6 @@ interface ApiService {
         @Path(value = "id")id: Int,
         @Body()incidencia: Incidencia
     ): Incidencia?
-}
+    */
 
-object AlpacApi{
-    val retrofitService: ApiService by lazy { retrofit.create(ApiService::class.java) }
 }
