@@ -4,7 +4,6 @@ import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 data class Incidencia (
-    @SerializedName("num") val num: Int,
     @SerializedName("tipo") val tipo: String,
     @SerializedName("subtipoId") val subtipoId: Subtipo,
     @SerializedName("fechaCreacion") val fechaCreacion: String,

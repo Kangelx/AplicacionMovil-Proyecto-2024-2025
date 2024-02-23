@@ -1,18 +1,28 @@
 package com.example.equipo3.settings
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.booleanPreferencesKey
+import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.datastore.preferences.preferencesDataStore
 import com.example.equipo3.R
 import com.example.equipo3.databinding.ActivitySettingsBinding
+import com.example.equipo3.incidenciasapp.IncidenciasActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.filter
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
+val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 class SettingsActivity : AppCompatActivity() {
     companion object {
         const val VOLUME_LVL = "volume_lvl"
@@ -80,7 +90,7 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         binding.btnAOk.setOnClickListener(){
-            val intent = Intent(this, VerIncidenciasActivity::class.java)
+            val intent = Intent(this, IncidenciasActivity::class.java)
             startActivity(intent)
         }
     }

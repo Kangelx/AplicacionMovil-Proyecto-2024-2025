@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.EditIncidenciasActivity"
+    android:layout_margin="4dp">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="331dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/alpacapp_incidents"
+        app:layout_constraintBottom_toTopOf="@+id/edTipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/alpacapp_incidents" />
+
+    <EditText
+        android:id="@+id/edTipo"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+
+        android:hint="Tipo"
+        android:inputType="text"
+        android:textIsSelectable="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorIncidencias"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/edFecha"
+        app:layout_constraintEnd_toEndOf="@id/edTipo"
+        app:layout_constraintStart_toStartOf="@id/edFecha"
+        app:layout_constraintTop_toBottomOf="@id/edTipo">
+
+        <EditText
+            android:id="@+id/edDescripcion"
+            android:layout_width="305dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@color/colorIncidencias"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="8dp"
+            android:text="Descripción "
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        />
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/edAula"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Aula"
+        android:inputType="text"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/edSubTipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edFecha" />
+
+    <EditText
+        android:id="@+id/edFecha"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Fecha"
+        android:inputType="datetime|date"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/edAula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <EditText
+        android:id="@+id/edSubTipo"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Subtipo"
+        android:inputType="text"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAula" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdjuntarArchivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSubTipo" />
+
+    <Button
+        android:id="@+id/btnAdjuntarArchivo"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="45dp"
+        android:text="Adjuntar Archivo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="320dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="29dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnCancelar"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorVerde"
+
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/btnAceptar"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/colorVerde"
+            android:text="Aceptar" />
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
