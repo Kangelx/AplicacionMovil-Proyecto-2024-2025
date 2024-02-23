@@ -28,6 +28,7 @@ interface ApiService {
 
     @POST("/incidencia")
     suspend fun crearIncidencia(
+        @Path(value = "id")id: Int,
         @Body()incidencia: Incidencia
     ): Incidencia?
 }
