@@ -1,14 +1,11 @@
 package com.example.equipo3.ApiService;
 
-import com.example.equipo3.model.Incidencia
-import com.example.equipo3.model.Usuario
-import com.example.equipo3.response.LoginResponse
 
-import retrofit2.Call;
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.Body
-import retrofit2.http.GET;
+import com.example.equipo3.model.Incidencia
+import com.example.equipo3.model.ProfesorDataResponse
+
+import retrofit2.Response
+import retrofit2.http.*
 import retrofit2.http.Header
 import retrofit2.http.POST
 import retrofit2.http.PUT
@@ -17,21 +14,38 @@ import retrofit2.http.Query
 
 
 interface ApiService {
-    //@POST(value = "login")
-    @GET("/perfil/")
-    fun postLogin(@Query(value = "educantabria") email: String, @Query (value = "password") password: String):
-            Call<LoginResponse>
+    @GET("http://10.0.13.119:4001/perfil/")
+    suspend fun getProfesor(
+        @Body usuario : ProfesorDataResponse
+    ): Response<ProfesorDataResponse>
 
-    companion object Factory{
-        private const val URL_BASE = "http://10.0.13.119:4001/"
-         fun create(): ApiService {
-             val retrofit = Retrofit.Builder()
-                 .baseUrl(URL_BASE)
-                 .addConverterFactory(GsonConverterFactory.create())
-                 .build()
-             return retrofit.create(ApiService::class.java)
-         }
-    }
+    @PUT("/incidencia")
+    suspend fun modificarIncidencia(
+        @Path(value = "id")id: Int,
+        @Body()incidencia: Incidencia
+    ): Incidencia?
+    /*
+    @POST("/incidencia")
+    suspend fun crearIncidencia(
+        @Body()incidencia: Incidencia
+    ): Incidencia?
+     */
+
+    //@POST(value = "login")
+//    @GET("/perfil/")
+//    fun postLogin(@Query(value = "educantabria") email: String, @Query (value = "password") password: String):
+//            Call<LoginResponse>
+//
+//    companion object Factory{
+//        private const val URL_BASE = "http://10.0.13.119:4001/"
+//         fun create(): ApiService {
+//             val retrofit = Retrofit.Builder()
+//                 .baseUrl(URL_BASE)
+//                 .addConverterFactory(GsonConverterFactory.create())
+//                 .build()
+//             return retrofit.create(ApiService::class.java)
+//         }
+//    }
     /*
     @GET("/incidencia")
     suspend fun getIncidencias(): List<Incidencia>

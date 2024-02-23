@@ -1,5 +1,6 @@
 package com.example.equipo3.response
 
+import com.example.equipo3.model.Incidencia
 import com.google.gson.annotations.SerializedName
 
 data class LoginResponse (
@@ -8,5 +9,7 @@ data class LoginResponse (
     @SerializedName("nombre")
     public val nombre: String,
     @SerializedName("apellidos")
-    public val apellidos: String
+    public val apellidos: String,
+    @SerializedName("ListaIncidencias")
+    public val listaIncidencias: List<Incidencia>
 )
