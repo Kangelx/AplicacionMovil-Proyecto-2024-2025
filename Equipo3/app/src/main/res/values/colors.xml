@@ -17,6 +17,9 @@
     <color name="colorVerdeClaro">#468030</color>
 
     <color name="colorRojo">#CA1219</color>
+    <color name="colorMorado">#9726AC</color>
+    <color name="colorMarron">#7C512C</color>
+    <color name="colorNaranjaIncidencia">#F9D19B</color>
     <!-- ... Otros colores aquí ... -->
 
     <color name="colorNaranja">#E1903A</color>
@@ -32,8 +35,10 @@
     <color name="estado_abierto">#FF9800</color>
     <color name="estado_asignado">#00BCD4</color>
     <color name="estado_enProceso">#F961FF</color>
-    <color name="estado_EnviadoInfortec">#9770FF</color>
-    <color name="estado_Resuelto">#4CAF50</color>
-    <color name="estado_Cerrado">#AEAEAE</color>
+    <color name="estado_enviadoInfortec">#9770FF</color>
+    <color name="estado_resuelto">#4CAF50</color>
+    <color name="estado_cerrado">#AEAEAE</color>
+
+    <color name="settings_text_title">#000000</color>
 
 </resources>

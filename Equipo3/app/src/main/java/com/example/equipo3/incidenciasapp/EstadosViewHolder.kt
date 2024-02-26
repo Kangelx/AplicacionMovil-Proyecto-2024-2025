@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.equipo3.R
 
 class EstadosViewHolder (view: View) : RecyclerView.ViewHolder(view){
-    private val tvIncidencia: TextView = view.findViewById(R.id.tvIncidencia)
+    private val tvIncidencia: TextView = view.findViewById(R.id.tvIncidencias)
 
 
     fun render(incidencia: EstadosIncidencias){

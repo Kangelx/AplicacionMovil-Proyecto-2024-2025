@@ -91,28 +91,28 @@ class AniadirIncidenciaActivity : AppCompatActivity() {
 
             apiService = retrofit.create(ApiService::class.java)
 
-            val call = apiService.crearIncidencia(incidencia)
-            call.enqueue(object : Callback<Void> {
-                override fun onResponse(call: Call<Void>, response: Response<Void>) {
-                    if (response.isSuccessful) {
-                        Log.d("ApiSuccess", "Incidencia enviada exitosamente")
-                        // Puedes realizar alguna acción adicional después de enviar la incidencia
-                    } else {
-                        Log.e("ApiError", "Error al enviar la incidencia: ${response.code()}")
-                    }
-                }
-
-                override fun onFailure(call: Call<Void>, t: Throwable) {
-                    Log.e("ApiError", "Error al enviar la incidencia", t)
-                    t.printStackTrace()
-
-                    // Imprimir el cuerpo de la respuesta
-                    if (t is HttpException) {
-                        val errorBody = t.response()?.errorBody()?.string()
-                        Log.e("ApiError", "Error Body: $errorBody")
-                    }
-                }
-            })
+//            val call = apiService.crearIncidencia(incidencia)
+//            call.enqueue(object : Callback<Void> {
+//                override fun onResponse(call: Call<Void>, response: Response<Void>) {
+//                    if (response.isSuccessful) {
+//                        Log.d("ApiSuccess", "Incidencia enviada exitosamente")
+//                        // Puedes realizar alguna acción adicional después de enviar la incidencia
+//                    } else {
+//                        Log.e("ApiError", "Error al enviar la incidencia: ${response.code()}")
+//                    }
+//                }
+//
+//                override fun onFailure(call: Call<Void>, t: Throwable) {
+//                    Log.e("ApiError", "Error al enviar la incidencia", t)
+//                    t.printStackTrace()
+//
+//                    // Imprimir el cuerpo de la respuesta
+//                    if (t is HttpException) {
+//                        val errorBody = t.response()?.errorBody()?.string()
+//                        Log.e("ApiError", "Error Body: $errorBody")
+//                    }
+//                }
+//            })
         }
 
         private fun obtenerPrioridadDesdeSpinner(position: Int): String {

@@ -1,63 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".incidenciasapp.IncidenciasActivity">
+    android:layout_height="match_parent">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/white"
+        android:orientation="vertical"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
-            android:layout_marginVertical="45dp"
-            android:text="Hola"
-            android:textAllCaps="true"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            />
+        tools:context=".todoapp.TodoActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Estados:"
-            />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvEstados"
+        <SearchView
+            android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            app:iconifiedByDefault="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Suspicious0dp" />
+
+
         <TextView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tvCategorias"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:textColor="@color/colorVerde"
+            android:text="Categorias:"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rvCategories"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvIncidencias"
+            android:textColor="@color/colorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
             android:text="Incidencias:"
-            />
+            android:textAlignment="viewStart"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvIncidencias"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="25dp"
-            android:layout_marginTop="10dp"
-            />
+            android:orientation="vertical"
+
+            android:layout_height="309dp" />
+
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabMasIncidencias"
+        android:id="@+id/fabAddTaskAniadir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="32dp"
         android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="@color/colorNaranja"
-        android:contentDescription="@string/fabBt"
-        android:layout_margin="30dp"
+        app:backgroundTint="@color/colorVerde"
+        app:fabSize="normal"
         android:layout_gravity="end|bottom"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddTaskAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_margin="32dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:backgroundTint="@color/colorVerde"
+        app:fabSize="normal"
         app:tint="@color/white"
-        />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="659dp"
+        tools:ignore="MissingConstraints" />
 
 </FrameLayout>
