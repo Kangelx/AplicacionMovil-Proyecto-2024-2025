@@ -10,7 +10,7 @@
       - [Login del profesor](#login-del-profesor)
       - [Pantalla de inicio](#pantalla-de-inicio)
       - [Generar incidencia](#generar-incidencia)
-      - [Ver incidencias](#ver-incidencias)
+      - [Ver incidencia](#ver-incidencia)
   - [**Aplicación de escritorio**](#aplicación-de-escritorio)
   - [**Base de datos**](#base-de-datos)
   - [**Documentación**](#documentación)
