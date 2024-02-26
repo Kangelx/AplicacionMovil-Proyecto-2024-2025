@@ -88,15 +88,15 @@ El login es la primera pantalla que verá el usuario al acceder a la aplicación
 
 ## **Autores del proyecto**
 ### *Aplicación móvil*
-- :iphone: Diego Corominas Gómez
-- :llama: Oana Irina Cutitaru Ciobanu
+- :iphone: Diego Corominas Gómez :iphone:
+- :llama: Oana Irina Cutitaru Ciobanu :llama:
 
 ### *Aplicación de escritorio*
-- :computer: Paula Díaz Santos
-- :desktop_computer: Ángel García García
+- :headphones: Paula Díaz Santos :headphones:
+- :desktop_computer: Ángel García García :desktop_computer:
 
 ### *Python*
-- :snake: Rubén Cortés Muñoz
+- :snake: Rubén Cortés Muñoz :snake:
 
 ### *Base de datos*
-- :file_folder: Pablo Sainz Luque
+- :file_folder: Pablo Sainz Luque :file_folder:
