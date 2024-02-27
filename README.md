@@ -45,7 +45,7 @@ En esta pantalla el usuario tiene la opción de marcar la casilla para recordar 
 
 
 
-En caso de que el usuario o la contraseña sean incorrectos verá un toast que indique que los datos son incorrectos.
+En caso de que el usuario o la contraseña sean incorrectos verá un *toast* que indique que los datos son incorrectos.
 
 
 
@@ -53,19 +53,20 @@ En caso de que el usuario o la contraseña sean incorrectos verá un toast que i
 
 ![inicio](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/ece3ceb1-f1c1-4606-88d1-b3104e838683)
 
-
 En la pantalla principal el usuario podrá ver una casilla de búsqueda, una lista horizontal de categorías, una lista vertical de inicidencias, un botón con datos de usuario y un botón para agregar incidencia.
 
 En el *searchbox* o casilla de búsqueda, el usuario podrá poner un número de incidencia y, en caso de que ésta exista, aparecerá filtrada la incidencia con dicho número en la lista de incidencias.
 
 ![incidencia_filtrada](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/a71d1cbd-e041-4430-bdcf-63beed7400d3)
 
-
 En la lista horizontal están las siguientes categorías: abierto, asignado, en proceso, enviado a infortec, resuelto y cerrado. Cada categoría tiene asignado un color para que visualmente sean más fácilmente identificables. Al principio están todas las categorías desmarcadas para mostrar todas las incidencias de todas las categorías. Al pinchar sobre una categoría el listado realizará un filtrado y mostrará las incidencias que tengan asignadas dicha categoría, pudiendo elegir varias categorías a la vez. Si se vuelve a pinchar, esta selección se desmarcará.
 
 ![categoria_seleccionada](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/ead0d04f-e508-455d-b9a4-749151b8f51e)
 
 En la lista horizontal de incidencias el usuario verá un *cardview* con información básica de la incidencia: número de incidencia, tipo de incidencia y descripción de la misma. Abajo a la izquierda tendrá dos botones, uno para borrar incidencia y otro para añadir comentario que al pulsar abrirá una nueva ventana que permitirá al usuario escribir un comentario o borrar comentarios anteriores.
+
+![borrar_incidencia](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/8e8415fb-4ac9-4e81-8bbf-162bcd08215e)
+
 
 ![comentarios](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/769ffe6c-1be6-4fdb-a7b9-93845b91d9d6)
 
@@ -80,21 +81,21 @@ El usuario podrá adjuntar un archivo, en cuyo caso se abrirá una ventana de ex
 
 ![adjuntar](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/35c549f6-608d-443c-a58e-473c81642618)
 
-Por último, en caso de que se quieran descartar los cambios que se han realizado, el usuario tendrá a su disposición el botón *cancelar* y, si por el contrario quiere guardar dichos cambios, podrá hacer uso del botón *aceptar*.
+Por último, en caso de que se quieran descartar los cambios que se han realizado, el usuario tendrá a su disposición el botón *cancelar* y, si por el contrario quiere guardar dichos cambios, podrá hacer uso del botón *aceptar*, y aparecerá además un *toast* que indicará que se están guardando los cambios.
+
+![guardar_cambios](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/1734039b-f8a7-4088-8709-88b47a2b0705)
 
 #### Generar incidencia
 ![nueva_incidencia](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/86711b23-9a50-4f5c-a682-66d3ae261a2f)
 
 Al elegir crear una nueva incidencia se abrirá una vista parecida a la anterior pero con los campos sin rellenar. En esta vista el usuario deberá editar los campos que se le muestran: tipo de incidencia, descripción de la misma, fecha de creación, aula, subtipo y estado.
 
+![lista_tipo_incidencia](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/795f4197-ddff-4f9a-baa1-615e881ae98b)
+
 En caso de que se arrepienta y no quiera guardar esta incidencia deberá optar por pulsar el botón *cancelar*, mientras que si está de acuerdo con los datos indicados y quiera subir esta incidencia a la base de datos deberá pulsar el botón *aceptar*
-
-
-
 
 #### Ajustes
 ![ajustes](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/7cfe9c80-53cc-47de-9dda-6f058cfa249f)
-
 
 En la pantalla de ajustes el usuario podrá activar o desactivar el modo oscuro, activar o desactivar el Bluetooth, subir o bajar el volumen, activar o desactivar el modo vibración del dispositivo. También se mostrará el nombre del usuario y dos botones que permitirán cerrar sesión o guardar los cambios realizados.
 
