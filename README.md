@@ -65,7 +65,7 @@ El login es la primera pantalla que verá el usuario al acceder a la aplicación
 
 ---
 
-## **Aplicación de escritorio** [Aplicación de escritorio] (https://github.com/Kangelx/AplicacionEscritorio-Proyecto-2024-2025/blob/main/README.md "Aplicación de escritorio")
+##  [Aplicación de escritorio](https://github.com/Kangelx/AplicacionEscritorio-Proyecto-2024-2025/blob/main/README.md "Aplicación de escritorio")
 
 ---
 
