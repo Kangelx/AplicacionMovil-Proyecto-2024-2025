@@ -1,5 +1,7 @@
 # AlpacApp Incidents
 
+![AlpacApp Incidents](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/19ea4930-cdb6-41e9-ae77-a4d0a5e7b101)
+
 ## **Índice de contenido**
 - [Proyecto intermodular](#proyecto-intermodular)
   - [**Índice de contenido**](#índice-de-contenido)
