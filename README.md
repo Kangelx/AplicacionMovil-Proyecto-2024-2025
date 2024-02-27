@@ -34,7 +34,8 @@ La aplicación móvil está diseñada para Android y está programada en Kotlin 
 ### *Funcionalidades*
 #### Login del profesor
 
-<p align="center"><img src="login.img"/></p>
+![login](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/2fe0a7cc-4fa4-4d42-84d1-e92f52aab6b9)
+
 
 El login es la primera pantalla que verá el usuario al acceder a la aplicación.
 
