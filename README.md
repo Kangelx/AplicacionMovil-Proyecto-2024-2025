@@ -56,39 +56,40 @@ En la pantalla principal el usuario podrá ver una casilla de búsqueda, una lis
 
 En el searchbox o casilla de búsqueda, el usuario podrá poner un número de incidencia y, en caso de que ésta exista, aparecerá filtrada la incidencia con dicho número en la lista de incidencias.
 
-<p align="center"><img src="incidencia_filtrada.img"/></p>
+![incidencia_filtrada](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/a71d1cbd-e041-4430-bdcf-63beed7400d3)
+
 
 En la lista horizontal están las siguientes categorías: abierto, asignado, en proceso, enviado a infortec, resuelto y cerrado. Cada categoría tiene asignado un color para que visualmente sean más fácilmente identificables. Al principio están todas las categorías desmarcadas para mostrar todas las incidencias de todas las categorías. Al pinchar sobre una categoría el listado realizará un filtrado y mostrará las incidencias que tengan asignadas dicha categoría, pudiendo elegir varias categorías a la vez. Si se vuelve a pinchar, esta selección se desmarcará.
 
-<p align="center"><img src="categoria_seleccionada.img"/></p>
+![categoria_seleccionada](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/ead0d04f-e508-455d-b9a4-749151b8f51e)
+
 
 En la lista horizontal de incidencias el usuario verá un cardview con información básica de la incidencia: número de incidencia, tipo de incidencia y descripción de la misma. Abajo a la izquierda tendrá dos botones, uno para borrar incidencia y otro para añadir comentario que al pulsar abrirá una nueva ventana que permitirá al usuario escribir un comentario o borrar comentarios anteriores.
 
-<p align="center"><img src="comentarios.img"/></p>
+![comentarios](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/769ffe6c-1be6-4fdb-a7b9-93845b91d9d6)
 
 Por último, abajo a la derecha hay un pequeño cuadrado con el color correspondiente a la categoría de la incidencia para saber el estado de la misma
 
 #### Ver incidencia
-<p align="center"><img src="datos_incidencia"/></p>
+![datos_incidencia](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/8c5697fd-36c2-41fc-b068-b651f1bf4125)
 
 
 
 #### Generar incidencia
-<p align="center"><img src=""/></p>
+![nueva_incidencia](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/86711b23-9a50-4f5c-a682-66d3ae261a2f)
 
 
 
-<p align="center"><img src=""/></p>
 
-
-
-<p align="center"><img src=""/></p>
 
 
 #### Ajustes
-<p align="center"><img src="ajustes.img"/></p>
+![ajustes](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/7cfe9c80-53cc-47de-9dda-6f058cfa249f)
+
 
 En la pantalla de ajustes el usuario podrá activar o desactivar el modo oscuro, activar o desactivar el Bluetooth, subir o bajar el volumen, activar o desactivar el modo vibración del dispositivo. También se mostrará el nombre del usuario y dos botones que permitirán cerrar sesión o guardar los cambios realizados.
+
+![modo oscuro](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/021bad95-9b25-4a9a-8a2d-93e4212d8ae8)
 
 ---
 
