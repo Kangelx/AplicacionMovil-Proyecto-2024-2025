@@ -65,22 +65,19 @@ El login es la primera pantalla que verá el usuario al acceder a la aplicación
 
 ---
 
-##  [Aplicación de escritorio](https://github.com/Kangelx/AplicacionEscritorio-Proyecto-2024-2025/blob/main/README.md "Aplicación de escritorio")
+## [Aplicación de escritorio](https://github.com/Kangelx/AplicacionEscritorio-Proyecto-2024-2025/blob/main/README.md "Aplicación de escritorio")
 
 ---
 
-## **Base de datos**
-*https://github.com/Kangelx/Base-de-datos-Proyecto-2024-2025/blob/main/README.md*
+## [Base de datos](https://github.com/Kangelx/Base-de-datos-Proyecto-2024-2025/blob/main/README.md "Base de datos")
 
 ---
 
-## **Documentacion**
-*https://github.com/Kangelx/Documentacion-Proyecto-2024-2025*
+## [Documentacion](https://github.com/Kangelx/Documentacion-Proyecto-2024-2025 "Documentación")
 
 ---
 
-## **SGE**
-*https://github.com/Kangelx/SGE-Proyecto-2024/blob/main/README.md*
+## [SGE](https://github.com/Kangelx/SGE-Proyecto-2024/blob/main/README.md "SGE")
 
 ---
 
