@@ -43,11 +43,11 @@ El login es la primera pantalla que verá el usuario al acceder a la aplicación
 
 En esta pantalla el usuario tiene la opción de marcar la casilla para recordar el usuario y así no tener que volver a escribir este dato a la hora de volver a iniciar sesión. En el caso de que el usuario haya olvidado la contraseña también va a tener una opción para recuperarla, por lo tanto al pulsar el enlace recibirá un correo.
 
-
+![recuperarPass](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/031ca1f6-539c-4eb0-b8ba-755d0dbbcb21)
 
 En caso de que el usuario o la contraseña sean incorrectos verá un *toast* que indique que los datos son incorrectos.
 
-
+![errorLogin](https://github.com/Kangelx/AplicacionMovil-Proyecto-2024-2025/assets/92816033/1f310426-2153-41d3-9236-ddc74468bafe)
 
 #### Pantalla de inicio
 
