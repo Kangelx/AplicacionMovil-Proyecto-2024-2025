@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">AlpacApp Incidents</string>
-    <string name="loginEmail">E-mail</string>
-    <string name="loginPass">Contraseña</string>
-    <string name="loginBt">Acceder</string>
-    <string name="fabBt">Añadir incidencia</string>
-    <string name="searchBar">Buscar...</string>
-</resources>

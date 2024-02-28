@@ -1,0 +1,83 @@
+<!-- res/layout/item_incidencia.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!-- Puedes agregar variables de enlace aquí si es necesario -->
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:background="@color/colorNaranjaIncidencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Indicador de color -->
+
+            <TextView
+                android:id="@+id/numTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tipoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/descripcionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Botones -->
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="362dp"
+                android:layout_height="27dp"
+                android:orientation="horizontal">
+
+                <!-- ImageButton de papelera -->
+                <ImageButton
+                    android:id="@+id/btnBorrar"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="borrarIncidencia"
+                    android:src="@drawable/baseline_restore_from_trash_24" />
+
+                <!-- ImageButton de añadir comentarios -->
+                <ImageButton
+                    android:id="@+id/btnComentarios"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="245dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="añadirComentarios"
+                    android:src="@drawable/baseline_edit_calendar_24" />
+
+                <View
+                    android:id="@+id/colorIndicator"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="8dp"
+
+                    android:background="?attr/colorAccent" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

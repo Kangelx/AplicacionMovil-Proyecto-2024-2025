@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">AlpacApp Incidents</string>
+    <string name="loginEmail">E-mail</string>
+    <string name="loginPass">Password</string>
+    <string name="loginBt">Login</string>
+    <string name="fabBt">Add issue</string>
+    <string name="searchBar">Search...</string>
+
+
+</resources>

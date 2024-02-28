@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etNuevoComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Añadir comentario"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnAgregarComentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNuevoComentario"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_marginTop="8dp"
+        android:text="Agregar Comentario"
+        android:backgroundTint="@color/colorVerde"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvComentarios"
+        android:layout_width="368dp"
+        android:layout_height="462dp"
+        android:layout_below="@id/btnAgregarComentario"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical" />
+
+
+    <Button
+        android:id="@+id/btnAceptarComentario"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rvComentarios"
+        android:layout_marginTop="450dp"
+
+        android:backgroundTint="@color/colorVerde"
+        android:text="Aceptar" />
+</RelativeLayout>

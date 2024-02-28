@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorGrisClaro">#D3D3D3</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBotonNormal">#4CAF50</color>
+
+    <color name="colorFondoApp">#41546D</color> <!-- Puedes ajustar este color según tus preferencias -->
+
+    <color name="colorVerde">#44872B</color> <!-- Puedes ajustar este color según tus preferencias -->
+
+    <color name="colorVerdeClaro">#468030</color>
+
+    <color name="colorRojo">#CA1219</color>
+    <color name="colorMorado">#9726AC</color>
+    <color name="colorMarron">#7C512C</color>
+    <color name="colorNaranjaIncidencia">#F9D19B</color>
+    <!-- ... Otros colores aquí ... -->
+
+    <color name="colorNaranja">#E1903A</color>
+
+    <color name="colorIncidencias">#B8AF96</color>
+    <!--TodoApp-->
+    <color name="todo_background_card">#FF081A4A</color>
+    <color name="todo_background_disabled">#787878</color>
+    <color name="todo_background_todo_app">#FF2D4993</color>
+    <color name="todo_subtitle_text">#959595</color>
+    <color name="todo_accent" tools:ignore="DuplicateDefinition">#E91E63</color>
+
+    <color name="todo_business_category">#FF9800</color>
+    <color name="todo_personal_category">#00BCD4</color>
+    <color name="todo_other_category">#4CAF50</color>
+
+    <!--    Setting-->
+    <color name="settings_text_title">#000000</color>
+    <color name="colorSelectedCategory">#FF4081</color>
+</resources>
+
+
